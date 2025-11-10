@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D интерактивный сайт с Three.js</title>
+    <link rel="stylesheet" href="work-3.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <div class="content">
+        <header class="header">
+            <div class="logo">3D Studio</div>
+            <nav class="nav">
+                <a href="#home">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </header>
+
+        <section id="home" class="hero">
+            <h1 class="hero-title">
+                <span class="word">Иммерсивный</span>
+                <span class="word">3D</span>
+                <span class="word">опыт</span>
+            </h1>
+            <p class="hero-subtitle">Интерактивная графика для вашего сайта</p>
+            <button class="explore-btn">Исследовать</button>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">О технологии</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Three.js - мощь WebGL</h3>
+                        <p>Three.js - это библиотека JavaScript для создания и отображения анимированной 3D компьютерной графики в веб-браузере с использованием WebGL.</p>
+                        <p>Мы используем Three.js для создания интерактивных 3D сцен, которые делают ваш сайт уникальным и запоминающимся.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">🎨</div>
+                            <h4>3D Графика</h4>
+                            <p>Реалистичные 3D объекты и сцены</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">⚡</div>
+                            <h4>Производительность</h4>
+                            <p>Оптимизированный рендеринг</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🔄</div>
+                            <h4>Интерактивность</h4>
+                            <p>Реакция на действия пользователя</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Наши проекты</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-number">01</div>
+                        <h3>3D Портфолио</h3>
+                        <p>Интерактивное портфолио с 3D элементами</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-number">02</div>
+                        <h3>Виртуальная галерея</h3>
+                        <p>3D пространство для демонстрации работ</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-number">03</div>
+                        <h3>Интерактивный продукт</h3>
+                        <p>3D визуализация товаров</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Начнем проект?</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Имя" class="form-input">
+                    <input type="email" placeholder="Email" class="form-input">
+                    <textarea placeholder="Сообщение" class="form-textarea"></textarea>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 3D Studio. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <a href="index.html" class="back-link">← Вернуться к портфолио</a>
+
+    <script src="work-3.js"></script>
+</body>
+</html>
+
